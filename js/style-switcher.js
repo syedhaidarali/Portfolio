@@ -10,9 +10,9 @@ window.addEventListener("scroll", () => {
   }
 });
 /* =====================  theme color ====================== */
-const alternativeStyles = document.querySelector(".alternate-style");
+const alternativeStyles = document.querySelectorAll(".alternate-style");
 
-function setActiveStyle(color) {
+function setActivestyle(color) {
   alternativeStyles.forEach((style) => {
     if (color === style.getAttribute("title")) {
       style.removeAttribute("disabled");
